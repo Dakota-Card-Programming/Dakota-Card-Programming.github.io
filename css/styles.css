@@ -1,0 +1,164 @@
+
+/* Typography */ 
+
+html {
+    font-family: 'Fira Sans', sans-serif; 
+}
+
+h1, h2, h3 {
+    font-weight: 500; 
+}
+
+p {
+    font-weight: 300; 
+    line-height: 18px; 
+}
+
+/* Layout */ 
+
+.wrapper {
+    width: 80%; 
+    margin: 0 auto; 
+    text-align: center;
+}
+
+.flex {
+    display:flex;
+    gap: 32px;  
+}
+
+#features > div {
+    flex: 1; 
+}
+
+img {
+    max-height: 300px; 
+    width: auto; 
+}
+
+main section {
+    padding: 60px 20px 0 20px; 
+}
+
+/* Table styling 
+   Playlist table
+*/
+
+#playlist table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#playlist thead th {
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+#playlist th,
+#playlist td {
+    padding: 10px 10px 10px 10px;
+}
+
+#playlist tr:nth-of-type(odd) {
+    background-color: #edd2cb;
+}
+
+#playlist tr:nth-of-type(even) {
+    background-color: #f1e8e6;
+}
+
+#playlist th {
+    color: #fff;
+    background-color: #543c52;
+}
+
+/* Characteristics table */
+
+#features h3 {
+    color: #fff;
+    background-color: #543c52;
+}
+
+#features table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#features td {
+    padding-bottom: 5px;
+}
+
+#features table tr:nth-child(2) {
+    background-color: #f1e8e6;
+}
+
+#features table tr:nth-of-type(odd) {
+    background-color: #edd2cb;
+}
+
+/* Link styling - styling all states*/
+
+.wrapper nav {
+    display: flex;
+    justify-content: center;
+    gap: 7em;
+}
+
+.wrapper nav a {
+    text-decoration: none;
+    padding: 15px;
+    outline: none;
+}
+
+.wrapper nav a:link {
+    background-color: #7e9bec;
+    color: black;
+}
+
+.wrapper nav a:visited{
+    background-color: #530498;
+    color: #fff;
+}
+
+.wrapper nav a:focus {
+    background-color: #621823;
+    color: #fff;
+}
+
+.wrapper nav a:hover {
+    color: #fff;
+    background-color: #444b68;
+    padding: 20px;
+    font-size: 15px;
+}
+
+.wrapper nav a:active {
+    background: #333;
+    color: #fff;
+}
+
+/* other link styling */
+
+#about a {
+    font-style: italic;
+    font-weight: 700;
+}
+
+/* List styling */
+
+#features ul {
+    text-align: left;
+    list-style-type: none;
+}
+
+#features ul li,
+#features ol li {
+    padding-bottom: .2em;
+}
+
+#features ol {
+    text-align: left;
+    list-style-type: lower-roman;
+}
